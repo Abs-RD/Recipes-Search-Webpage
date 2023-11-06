@@ -1,0 +1,54 @@
+body {
+    background-image: linear-gradient(to right, rgb(245, 227, 173), rgb(220, 163, 253));
+} 
+
+.App {
+    text-align: center;
+    font-family: cursive;
+}
+  
+  
+.App-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(78, 38, 237);
+    font-weight: bold;
+}
+  
+  
+.App-link {
+    color: #1809b7;
+}
+.App-link:hover {
+    color: red;
+}
+  
+
+a {
+    color: rgb(78, 38, 237);
+    text-decoration: none;
+}
+  
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+button {
+    font-weight: bold;
+    background-color: #b4b3b3;
+    color: #161414;
+    border: none;
+    outline-color: #101112;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #dbf6ab;
+    cursor: pointer;
+}
+  

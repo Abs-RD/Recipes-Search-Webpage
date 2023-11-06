@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Data Displayer styling */
+
+.displayer-title {
+  padding-top: 50px;
+  font-size: 24px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+
+.displayer-comment{
+  text-align: center;
+}
+
+/* styling for the search bar*/
+
+.form-container {
+  display: flex;
+  min-width: 100px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.label {
+  padding: 10px;
+}
+
+.input {
+  border-radius: 5px;
+  height: 30px;
+  width: 20%;
+
+}
+
+.input:hover, .input:focus {
+  border: 1.5px solid #009688;
+  background-color: white;
+}
+
+
+
+/* styling for the images gallery */
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.image-gallery >li {
+  flex-basis: 350px;
+  position: relative;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.image-gallery li img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-radius: 5px;
+  
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(57,57,57,0.5);
+  top: 0;
+  left:0;
+  transform: scale(0);
+  transition: all 0.2s 0.1s ease-in-out;
+  color: #ddd;
+  border-radius: 5px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.image-gallery li:hover .overlay {
+  transform: scale(1);
+}
+
+
+/* styling for the modal */
+
+.modal{
+  position:fixed;
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  background-color: black;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+}
+
+.modal-content {
+  width: auto;
+  background-color: #ddd;
+  overflow: scroll;
+}
+
+.modal-header, .modal-footer {
+  padding: 10px;
+}
+
+.modal-body {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+/* styling for the recipe */
+
+.ingredient-title{
+  font-weight: bold;
+}
+
+.ingredient-list{
+  display:flex
+}
+
+.ingredient-pic {
+ padding-left: 20px;
+}
+
+.video-link {
+  color: #1809b7;
+  font-weight: bold;
+  text-decoration: underline;
+}
